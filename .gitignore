@@ -1,0 +1,72 @@
+# =========================
+# Python bytecode / cache
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Why:
+# - Generated automatically
+# - Platform & version specific
+# - Completely reproducible
+
+
+# =========================
+# Virtual environments
+# =========================
+venv/
+.env/
+.env*/
+conda-env/
+miniconda/
+anaconda/
+
+# Why:
+# - Environments are huge
+# - Not portable
+# - You already have environment.yml
+
+
+# =========================
+# Jupyter
+# =========================
+.ipynb_checkpoints/
+
+# Why:
+# - Auto-generated
+# - No learning value
+
+
+# =========================
+# VS Code
+# =========================
+.vscode/
+
+# Why:
+# - Editor-specific
+# - Personal preferences
+
+
+# =========================
+# OS / system files
+# =========================
+.DS_Store
+Thumbs.db
+
+# Why:
+# - OS-generated junk
+
+
+# =========================
+# Data & outputs (important)
+# =========================
+data/
+outputs/
+results/
+*.log
+
+# Why:
+# - Raw datasets are large
+# - Often private or licensed
+# - Outputs are reproducible
