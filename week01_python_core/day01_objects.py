@@ -1,3 +1,9 @@
+# Week 01 – Python Core Concepts
+# Day 01 - Objects, Mutability, and Functions
+# This file documents my understanding of Python's object model,
+# mutability, and first-class functions using small experiments.
+
+
 # Concept 1: Names, Objects, Immutability
 # Demonstrating how Python passes things through references, not values
 
@@ -63,7 +69,7 @@ print(stringy)
 
 
 # Concept 3: Functions as first-class objects
-# Understanding how functions can be used as objects
+# Understanding how functions are just objects in Python
 
 # Creating a function to count how many times G and C occur in a seq
 def count_gc(seq):
@@ -71,7 +77,7 @@ def count_gc(seq):
     # Return the sum of: 1 for every time G and C occur
     return sum(1 for b in seq if b in ("G", "C"))
 
-# Creating a "variable" (really just an object) that represents the function
+# Creating a variable that is assigned to a function
 # allowing you to create short versions of the function
 f = count_gc
 
@@ -79,5 +85,10 @@ f = count_gc
 print(f("ATGCGC"))
 
 # Learnings: Python is particularly powerful when it comes to objects and functions
-#            as you can essentially turn a function into an object that can be applied
-#            to given data
+#            as all functions are objects, meaning they can be assigned to variables
+#            be passed as arguments to other functions, be returned from functions,
+#            and be stored in data structures like lists and dicts. More advanced python
+#            makes functions that operate on functions and can return functions.
+
+# Note on functions as arguments: When a function is listed as a parameter, the argument can be ANY function
+#                                 it's the original function definition that defines how the arg will be used.
